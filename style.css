@@ -47,6 +47,7 @@ body {
 .content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 64px 0;
 }
 
 .profile {
@@ -96,4 +97,32 @@ body {
 .profile__label {
   font-weight: 600;
   margin-right: 12px;
+}
+
+.bootcamp {
+  padding: 0 16px;
+}
+
+.bootcamp__heading {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 8px 0;
+  text-underline-offset: 6px;
+  text-decoration: underline;
+  text-decoration-color: #52525b;
+  text-decoration-thickness: 4px;
+}
+
+.bootcamp__label {
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.bootcamp__content {
+  margin-left: 24px;
+}
+
+.bootcamp__list {
+  padding-left: 16px;
+  list-style: square;
 }
