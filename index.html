@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=M+PLUS+Rounded+1c:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./phearom/shuffle_word.js" defer></script>
+    <link rel="stylesheet" href="./phearom/blinking_cursor.css" />
   </head>
   <body>
     <nav class="nav">
@@ -21,7 +23,7 @@
           <a class="nav__link" href="#profile">Profile</a>
         </li>
         <li>
-          <a class="nav__link" href="#profile">Bootcamp</a>
+          <a class="nav__link" href="#bootcamp">Bootcamp</a>
         </li>
       </ul>
     </nav>
@@ -59,7 +61,11 @@
         <div class="profile__header">
           <div class="profile__info">
             <span class="profile__name">Sean Sophearom</span>
-            <span class="profile_desc">Backend Developer</span>
+            <span>
+              <span class="profile_desc" id="phearom__job"
+                >Backend Developer</span
+              ><span class="blinking-cursor">|</span></span
+            >
           </div>
           <div class="profile__img"></div>
         </div>
@@ -103,21 +109,42 @@
         </div>
         <div class="profile__heading">Skills</div>
         <div>
-          <span class="profile__label">Html/Css, Javascript, Figma</span>
+          <span class="profile__label">Html/Css, Javascript</span>
         </div>
       </div>
 
       <section class="bootcamp">
         <div class="bootcamp__heading">Bootcamp</div>
 
-        <h2 class="bootcamp__label">Week 1</h2>
+        <h2 class="bootcamp__label" id="bootcamp">Week 1</h2>
         <div class="bootcamp__content">
           <ul class="bootcamp__list">
             <li>
-              Learned Git
-              <ul class="bootcamp__list">
-                <li>Use for code source control</li>
-              </ul>
+              Learned Project Design Workflow
+              <p>- Learn each step of project design Workflow</p>
+              <p>- Understand how to build a project from scratch to finish</p>
+              <p>- Apply on a real project</p>
+            </li>
+            <li>
+              Learned Git and BitBucket
+              <p>- Save code on the cloud repositories</p>
+              <p>- Collaborate and work together as a team</p>
+              <p>- Easy to revert mistake</p>
+              <p>- Simulate a real work environment</p>
+            </li>
+            <li>
+              Learned Atomic Design
+              <p>- What Atomic Design is</p>
+              <p>- Each key levels of Atomic Design</p>
+              <p>- Why Atomic Design is important for the modern web</p>
+              <p>- How to apply it to a project</p>
+            </li>
+            <li>
+              Learned HTML & CSS
+              <p>- Basic HTML and CSS tags</p>
+              <p>- HTML and CSS quiz</p>
+              <p>- Javascript quiz</p>
+              <p>- Build a small project</p>
             </li>
           </ul>
         </div>
