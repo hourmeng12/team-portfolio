@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./phearom/shuffle_word.js" defer></script>
+    <link rel="stylesheet" href="./phearom/blinking_cursor.css" />
   </head>
   <body>
     <nav class="nav">
@@ -27,7 +29,7 @@
           <a class="nav__link" href="#profile">Profile</a>
         </li>
         <li>
-          <a class="nav__link" href="#profile">Bootcamp</a>
+          <a class="nav__link" href="#bootcamp">Bootcamp</a>
         </li>
       </ul>
     </nav>
@@ -65,7 +67,11 @@
         <div class="profile__header">
           <div class="profile__info">
             <span class="profile__name">Sean Sophearom</span>
-            <span class="profile_desc">Backend Developer</span>
+            <span>
+              <span class="profile_desc" id="phearom__job"
+                >Backend Developer</span
+              ><span class="blinking-cursor">|</span></span
+            >
           </div>
           <div class="profile__img"></div>
         </div>
@@ -116,15 +122,15 @@
       <section class="bootcamp">
         <div class="bootcamp__heading">Bootcamp</div>
 
-        <h2 class="bootcamp__label">Week 1</h2>
+        <h2 class="bootcamp__label" id="bootcamp">Week 1</h2>
         <div class="bootcamp__content">
           <ul class="bootcamp__list">
             <li>
               Learned Git
-              <p>use it for code source control</p>
+              <p>- use it for code source control</p>
             </li>
           </ul>
-        </div​ចល>
+        </div>
       </section>
     </main>
   </body>
