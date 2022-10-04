@@ -2,15 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  /* color: white;
-  background: #1e1e1e; */
-  --main-color: #fff;
-  --bg-color: #000;
-  transition: all 250ms linear;
-  /* transition: color 200ms linear; */
-}
-
 .dark {
   color: white;
   background: #1e1e1e;
@@ -101,6 +92,11 @@ body {
   width: 24px;
   height: 100%;
   transition: all 0.25s;
+}
+
+.white-icons {
+  filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(351deg)
+    brightness(100%) contrast(104%);
 }
 
 .facebook:hover {
