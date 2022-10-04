@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.dark {
+  color: white;
+  background: #1e1e1e;
+  --main-color: #1e1e1e;
+  --bg-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,8 +19,18 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
+  --main-color: #fff;
+  --bg-color: #000;
+  transition: all 250ms linear;
+}
+
+.dark {
+  color: white;
+  background: #1e1e1e;
+  --main-color: #1e1e1e;
+  --bg-color: #fff;
 }
 
 .nav {
@@ -28,11 +45,16 @@ body {
 .nav__logo {
   font-weight: 600;
   font-size: 24px;
+  text-decoration: none;
+  color: var(--bg-color);
 }
 
 .nav__logo a {
+  font-weight: 600;
+  font-size: 24px;
   text-decoration: none;
-  color: #000;
+  color: var(--bg-color);
+  text-decoration: none;
 }
 
 .nav__list {
@@ -43,7 +65,9 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: #000;
+  cursor: pointer;
+  color: var(--bg-color);
+  user-select: none;
 }
 
 .nav__list li:not(:last-child) {
@@ -70,6 +94,11 @@ body {
   transition: all 0.25s;
 }
 
+.white-icons {
+  filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(351deg)
+    brightness(100%) contrast(104%);
+}
+
 .facebook:hover {
   filter: invert(38%) sepia(17%) saturate(1954%) hue-rotate(182deg)
     brightness(97%) contrast(87%);
@@ -89,6 +118,14 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 46px 16px 64px 16px;
+}
+
+.box {
+  padding: 0 16px;
+}
+
+.box {
+  padding: 0 16px;
 }
 
 .heading {
@@ -129,7 +166,7 @@ body {
 
 .profile__name {
   font-size: 16px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .profile__header {
@@ -234,7 +271,7 @@ body {
 }
 
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
   display: block;
   width: 100%;
@@ -248,10 +285,16 @@ textarea {
 .submit__bn {
   margin-top: 16px;
   padding: 12px 32px;
-  color: #fff;
-  background-color: #000;
+  color: var(--main-color);
+  background-color: var(--bg-color);
   text-decoration: none;
   border: 0;
   border-radius: 4px;
   font-weight: 500;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.submit__bn:hover {
+  scale: 1.1;
 }
