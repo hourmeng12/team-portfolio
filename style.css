@@ -6,6 +6,8 @@ body {
   /* color: white;
   background: #1e1e1e; */
   --main-color: #000;
+  transition: all 250ms linear;
+  /* transition: color 200ms linear; */
 }
 
 .dark {
