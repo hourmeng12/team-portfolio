@@ -120,7 +120,7 @@ body {
 }
 
 .hero {
-  height: 60vh;
+  padding-bottom: 64px;
 }
 
 .profile {
