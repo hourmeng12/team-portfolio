@@ -30,6 +30,11 @@ body {
   font-size: 24px;
 }
 
+.nav__logo a {
+  text-decoration: none;
+  color: #000;
+}
+
 .nav__list {
   list-style: none;
   display: flex;
@@ -83,7 +88,7 @@ body {
 .content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 46px 0 64px 0;
+  padding: 46px 16px 64px 16px;
 }
 
 .heading {
@@ -116,11 +121,10 @@ body {
 
 .hero {
   height: 60vh;
-  padding: 0 16px;
 }
 
 .profile {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .profile__name {
@@ -172,7 +176,7 @@ body {
 }
 
 .bootcamp {
-  padding: 16px 16px 0;
+  padding: 16px 0 16px 0;
 }
 
 .bootcamp__heading {
@@ -197,4 +201,57 @@ body {
 .bootcamp__list {
   padding-left: 16px;
   list-style: square;
+}
+
+/* Contact Style */
+
+.content__header {
+  font-size: 34px;
+}
+.contact__form input {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgb(243, 243, 243);
+  margin-top: 5px;
+}
+.input__name {
+  margin-top: 24px;
+}
+.input__email {
+  margin-top: 18px;
+}
+.input__mg {
+  margin-top: 18px;
+}
+
+.label__text {
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgb(243, 243, 243);
+  margin-top: 5px;
+  resize: vertical;
+}
+.submit__bn {
+  margin-top: 16px;
+  padding: 12px 32px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
 }
