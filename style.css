@@ -5,7 +5,8 @@ html {
 body {
   /* color: white;
   background: #1e1e1e; */
-  --main-color: #000;
+  --main-color: #fff;
+  --bg-color: #000;
   transition: all 250ms linear;
   /* transition: color 200ms linear; */
 }
@@ -13,7 +14,8 @@ body {
 .dark {
   color: white;
   background: #1e1e1e;
-  --main-color: #fff;
+  --main-color: #1e1e1e;
+  --bg-color: #fff;
 }
 
 * {
@@ -42,6 +44,8 @@ body {
 .nav__logo {
   font-weight: 600;
   font-size: 24px;
+  text-decoration: none;
+  color: var(--bg-color);
 }
 
 .nav__list {
@@ -53,7 +57,7 @@ body {
 .nav__link {
   text-decoration: none;
   cursor: pointer;
-  color: var(--main-color);
+  color: var(--bg-color);
   user-select: none;
 }
 
@@ -229,10 +233,16 @@ textarea {
 .submit__bn {
   margin-top: 16px;
   padding: 12px 32px;
-  color: #fff;
-  background-color: #000;
+  color: var(--main-color);
+  background-color: var(--bg-color);
   text-decoration: none;
   border: 0;
   border-radius: 4px;
   font-weight: 500;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.submit__bn:hover {
+  scale: 1.1;
 }

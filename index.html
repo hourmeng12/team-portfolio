@@ -12,24 +12,25 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=M+PLUS+Rounded+1c:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./scripts/dark_mode.js" defer></script>
     <script src="./scripts/shuffle_word.js" defer></script>
     <link rel="stylesheet" href="./scripts/blinking_cursor.css" />
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__logo">Portfolio</div>
+      <a class="nav__logo" href="./index.html">Portfolio</a>
       <ul class="nav__list">
         <li>
           <a class="nav__link" id="dark__mode__btn">Dark</a>
         </li>
         <li>
-          <a class="nav__link" href="#team">Team</a>
+          <a class="nav__link" href="./index.html#team">Team</a>
         </li>
         <li>
-          <a class="nav__link" href="#bootcamp">Bootcamp</a>
+          <a class="nav__link" href="./index.html#bootcamp">Bootcamp</a>
         </li>
         <li>
-          <a class="nav__link" href="/contact">Contact</a>
+          <a class="nav__link" href="./contact.html">Contact</a>
         </li>
       </ul>
     </nav>
@@ -182,19 +183,5 @@
         </div>
       </section>
     </main>
-
-    <script>
-      const dark__btn = document.getElementById("dark__mode__btn");
-      dark__btn.addEventListener("click", () => {
-        const body = document.body;
-        if (body.classList.contains("dark")) {
-          body.classList.remove("dark");
-          dark__btn.innerText = "Dark";
-        } else {
-          body.classList.add("dark");
-          dark__btn.innerText = "Light";
-        }
-      });
-    </script>
   </body>
 </html>
