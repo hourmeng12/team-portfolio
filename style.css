@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  /* color: white;
+  background: #1e1e1e; */
+  --main-color: #000;
+}
+
+.dark {
+  color: white;
+  background: #1e1e1e;
+  --main-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,7 +24,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
 }
 
@@ -38,7 +50,8 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: #000;
+  cursor: pointer;
+  color: var(--main-color);
 }
 
 .nav__list li:not(:last-child) {
@@ -94,7 +107,7 @@ body {
 
 .profile__name {
   font-size: 16px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .profile__header {

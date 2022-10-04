@@ -20,6 +20,9 @@
       <div class="nav__logo">Portfolio</div>
       <ul class="nav__list">
         <li>
+          <a class="nav__link" id="dark__mode__btn">Dark</a>
+        </li>
+        <li>
           <a class="nav__link" href="#team">Team</a>
         </li>
         <li>
@@ -176,5 +179,17 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const dark__btn = document.getElementById("dark__mode__btn");
+      dark__btn.addEventListener("click", () => {
+        const body = document.body;
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      });
+    </script>
   </body>
 </html>
