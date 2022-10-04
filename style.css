@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
 }
 
@@ -28,6 +28,11 @@ body {
 .nav__logo {
   font-weight: 600;
   font-size: 24px;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: #000;
 }
 
 .nav__list {
@@ -52,7 +57,7 @@ body {
 .content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 46px 0 64px 0;
+  padding: 46px 16px 64px 16px;
 }
 
 .heading {
@@ -85,16 +90,15 @@ body {
 
 .hero {
   height: 60vh;
-  padding: 0 16px;
 }
 
 .profile {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .profile__name {
   font-size: 16px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .profile__header {
@@ -141,7 +145,7 @@ body {
 }
 
 .bootcamp {
-  padding: 16px 16px 0;
+  padding: 16px 0 16px 0;
 }
 
 .bootcamp__heading {
@@ -199,7 +203,7 @@ body {
 }
 
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   display: block;
   width: 100%;
