@@ -52,6 +52,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   color: var(--main-color);
+  user-select: none;
 }
 
 .nav__list li:not(:last-child) {

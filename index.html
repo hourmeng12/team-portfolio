@@ -186,8 +186,10 @@
         const body = document.body;
         if (body.classList.contains("dark")) {
           body.classList.remove("dark");
+          dark__btn.innerText = "Dark";
         } else {
           body.classList.add("dark");
+          dark__btn.innerText = "Light";
         }
       });
     </script>
