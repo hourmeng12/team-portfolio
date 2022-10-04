@@ -49,6 +49,37 @@ body {
   text-decoration: underline;
 }
 
+.icon__container {
+  margin: 8px 0;
+  display: flex;
+}
+
+.icon__container > *:not(:last-child) {
+  margin-right: 16px;
+}
+
+.icon {
+  display: flex;
+  width: 24px;
+  height: 100%;
+  transition: all 0.25s;
+}
+
+.facebook:hover {
+  filter: invert(38%) sepia(17%) saturate(1954%) hue-rotate(182deg)
+    brightness(97%) contrast(87%);
+}
+
+.instagram:hover {
+  filter: invert(29%) sepia(51%) saturate(2893%) hue-rotate(317deg)
+    brightness(90%) contrast(95%);
+}
+
+.bitbucket:hover {
+  filter: invert(26%) sepia(25%) saturate(7011%) hue-rotate(206deg)
+    brightness(86%) contrast(109%);
+}
+
 .content {
   max-width: 800px;
   margin: 0 auto;
