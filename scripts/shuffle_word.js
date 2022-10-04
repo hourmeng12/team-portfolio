@@ -6,9 +6,9 @@ function shuffleWord(domName, wordList) {
     if (i > 0) {
       let letter = wordList[i][domName.innerText.length];
       domName.innerText +=
-        letter !== " "
+        letter !== ' '
           ? letter
-          : " " + wordList[i][domName.innerText.length + 1];
+          : ' ' + wordList[i][domName.innerText.length + 1];
       if (domName.innerText === wordList[i]) {
         i = -i;
         clearInterval(myInterval);
@@ -32,10 +32,26 @@ function shuffleWord(domName, wordList) {
   }
 }
 
-const domWord = document.getElementById("phearom__job");
+setTimeout(() => {
+  shuffleWord(document.getElementById('hourmeng__job'), [
+    'Frontend Developer...',
+    'Web Developer...',
+    'UI/UX Designer...',
+  ]);
+}, 500);
 
-shuffleWord(domWord, [
-  "Frontend Developer...",
-  "Web Developer...",
-  "Backend Developer...",
-]);
+setTimeout(() => {
+  shuffleWord(document.getElementById('phearom__job'), [
+    'Frontend Developer...',
+    'Web Developer...',
+    'Backend Developer...',
+  ]);
+}, 1250);
+
+setTimeout(() => {
+  shuffleWord(document.getElementById('samnang__job'), [
+    'Frontend Developer...',
+    'Web Developer...',
+    'UI/UX Designer...',
+  ]);
+}, 2000);
