@@ -2,6 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  /* color: white;
+  background: #1e1e1e; */
+  --main-color: #fff;
+  --bg-color: #000;
+  transition: all 250ms linear;
+  /* transition: color 200ms linear; */
+}
+
+.dark {
+  color: white;
+  background: #1e1e1e;
+  --main-color: #1e1e1e;
+  --bg-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -38,6 +54,8 @@ body {
 .nav__logo {
   font-weight: 600;
   font-size: 24px;
+  text-decoration: none;
+  color: var(--bg-color);
 }
 
 .nav__logo a {
@@ -56,8 +74,9 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: var(--bg-color);
   cursor: pointer;
+  color: var(--bg-color);
+  user-select: none;
 }
 
 .nav__list li:not(:last-child) {
@@ -103,6 +122,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 46px 16px 64px 16px;
+}
+
+.box {
+  padding: 0 16px;
 }
 
 .box {
@@ -272,4 +295,10 @@ textarea {
   border: 0;
   border-radius: 4px;
   font-weight: 500;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.submit__bn:hover {
+  scale: 1.1;
 }
