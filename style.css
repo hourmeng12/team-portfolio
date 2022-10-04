@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
 }
 
@@ -94,7 +94,7 @@ body {
 
 .profile__name {
   font-size: 16px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .profile__header {
@@ -166,4 +166,57 @@ body {
 .bootcamp__list {
   padding-left: 16px;
   list-style: square;
+}
+
+/* Contact Style */
+
+.content__header {
+  font-size: 34px;
+}
+.contact__form input {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgb(243, 243, 243);
+  margin-top: 5px;
+}
+.input__name {
+  margin-top: 24px;
+}
+.input__email {
+  margin-top: 18px;
+}
+.input__mg {
+  margin-top: 18px;
+}
+
+.label__text {
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgb(243, 243, 243);
+  margin-top: 5px;
+  resize: vertical;
+}
+.submit__bn {
+  margin-top: 16px;
+  padding: 12px 32px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
 }
