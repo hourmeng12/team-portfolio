@@ -31,27 +31,3 @@ function shuffleWord(domName, wordList) {
     }
   }
 }
-
-setTimeout(() => {
-  shuffleWord(document.getElementById('hourmeng__job'), [
-    'Frontend Developer...',
-    'Web Developer...',
-    'UI/UX Designer...',
-  ]);
-}, 500);
-
-setTimeout(() => {
-  shuffleWord(document.getElementById('phearom__job'), [
-    'Frontend Developer...',
-    'Web Developer...',
-    'Backend Developer...',
-  ]);
-}, 1250);
-
-setTimeout(() => {
-  shuffleWord(document.getElementById('samnang__job'), [
-    'Frontend Developer...',
-    'Web Developer...',
-    'UI/UX Designer...',
-  ]);
-}, 2000);
