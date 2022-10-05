@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   --main-color: #fff;
   --bg-color: #000;
@@ -72,6 +72,12 @@ body {
 
 .nav__list li:not(:last-child) {
   margin-right: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .nav__list li:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .nav__link:hover {
@@ -166,7 +172,7 @@ body {
 
 .profile__name {
   font-size: 16px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .profile__header {
@@ -188,8 +194,10 @@ body {
   width: 112px;
   height: 112px;
   border-radius: 50%;
-  background-color: #52525b;
+  background-color: #ccc;
   overflow: hidden;
+  flex-shrink: 0;
+  padding: 2px;
 }
 
 .profile_img img {
@@ -271,7 +279,7 @@ body {
 }
 
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   display: block;
   width: 100%;
