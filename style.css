@@ -307,6 +307,28 @@ textarea {
   scale: 1.1;
 }
 
+.link__container {
+  margin-top: 16px;
+}
+
+.link {
+  color: #007cf0;
+  font-weight: 600;
+  transition: all 0.25s;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #007cf0;
+  text-decoration-thickness: 3px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration: underline;
+  text-decoration-color: #007cf0;
+  text-decoration-thickness: 3px;
+}
+
 /* Team */
 
 .team__hero {
