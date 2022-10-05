@@ -11,15 +11,15 @@ html {
 
 /* style for dark mode icon */
 
-.dark__mode__container {
+.dark-mode__container {
   transform: scale(0.55);
 }
-.dark__mode__input {
+.dark-mode__input {
   opacity: 0;
   position: absolute;
 }
 
-.dark__mode__label {
+.dark-mode__label {
   border: 1px solid white;
   width: 50px;
   height: 26px;
@@ -31,9 +31,10 @@ html {
   padding: 5px;
   position: relative;
   transform: scale(1.5);
+  cursor: pointer;
 }
 
-.dark__mode__ball {
+.dark-mode__ball {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -42,10 +43,11 @@ html {
   left: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;
+  cursor: pointer;
 }
 
 /*  target the elemenent after the label*/
-.dark__mode__input:checked + .dark__mode__label .dark__mode__ball {
+.dark-mode__input:checked + .dark-mode__label .dark-mode__ball {
   transform: translateX(24px);
 }
 
@@ -68,7 +70,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   --main-color: #fff;
   --bg-color: #000;
@@ -221,7 +223,7 @@ body {
 
 .profile__name {
   font-size: 16px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .profile__header {
@@ -328,7 +330,7 @@ body {
 }
 
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
   display: block;
   width: 100%;
