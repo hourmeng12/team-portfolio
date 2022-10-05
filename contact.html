@@ -13,7 +13,10 @@
       rel="stylesheet"
     />
     <script src="./scripts/dark_mode.js" defer></script>
-
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    rel="stylesheet"
+  />
 
     <title>Contact</title>
   </head>
@@ -23,9 +26,7 @@
         <a href="/">Portfolio</a>
       </div>
       <ul class="nav__list">
-        <li>
-          <a class="nav__link" id="dark__mode__btn">Dark</a>
-        </li>
+        
         <li>
           <a class="nav__link" href="/#team">Team</a>
         </li>
@@ -34,6 +35,22 @@
         </li>
         <li>
           <a class="nav__link" href="/contact.html">Contact</a>
+        </li>
+        <li>
+          <!-- darkmode button -->
+          <div class="dark__mode__container">
+            <!-- end of darkmode button -->
+            <input
+              type="checkbox"
+              class="dark__mode__input"
+              id="dark__mode__btn"
+            />
+            <label for="dark__mode__btn" class="dark__mode__label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="dark__mode__ball"></div>
+            </label>
+          </div>
         </li>
       </ul>
     </nav>
