@@ -433,7 +433,15 @@ textarea {
   margin: 52px auto 0 auto;
   padding: 0 16px;
 }
+.project__heading {
+  font-size: 36px;
+}
+.project__heading::first-letter {
+  font-size: 48px;
+  font-weight: 700;
+}
 .project__description {
+  margin-top: 12px;
   font-size: 24px;
   font-weight: 400;
 }
