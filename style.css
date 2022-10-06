@@ -410,16 +410,48 @@ textarea {
   background-color: #50e68c;
   width: 100%;
   margin-bottom: 30px;
-  padding: 16px 0;
+  padding: 64px 0;
+}
+.project__logo {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.project__icon {
+  width: 84px;
+  height: 84px;
+}
+.project__title {
+  font-family: "Dangrek", cursive;
+  font-size: 46px;
 }
 .project__info {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 52px auto 0 auto;
+  padding: 0 16px;
 }
-.project__icon {
-  width: 30px;
-  height: 30px;
+.project__description {
+  font-size: 24px;
+  font-weight: 400;
 }
-.project__title {
-  font-family: "Dongrek", cursive;
+
+/* feature section */
+.feature {
+  padding: 0 16px;
+}
+
+/* .feature__header {
+  display: grid;
+  place-items: center;
+} */
+
+.feature__detail li:first-child {
+  margin-top: 16px;
+}
+
+.feature__detail li {
+  list-style-position: inside;
 }
