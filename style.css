@@ -484,6 +484,7 @@ textarea {
   background-color: #fff;
   border-radius: 8px;
   border: 1px solid rgba(22, 44, 39, 0.25);
+  flex-shrink: 0;
 }
 
 .feature__icon i {
