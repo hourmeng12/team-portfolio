@@ -403,7 +403,7 @@ textarea {
   margin-top: 42px;
 }
 
-/* Our Project Section */
+/* Project Section */
 
 .project {
   display: block;
@@ -411,38 +411,37 @@ textarea {
   width: 100%;
   margin-bottom: 30px;
   padding: 64px 0;
+  color: #162c27;
 }
+
 .project__logo {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
+
 .project__icon {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
 }
+
 .project__title {
   font-family: 'Dangrek', cursive;
-  font-size: 38px;
+  font-size: 32px;
 }
+
 .project__info {
   max-width: 800px;
   margin: 52px auto 0 auto;
   padding: 0 16px;
 }
-.project__heading {
-  font-size: 36px;
-}
-.project__heading::first-letter {
-  font-size: 48px;
-  font-weight: 700;
-}
+
 .project__description {
   margin-top: 12px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -510,6 +509,11 @@ textarea {
   padding: 16px;
   border: 1px solid rgba(22, 44, 39, 0.25);
   border-radius: 16px;
+  transition: all 0.2s ease-in;
+}
+
+.benefit__item:hover {
+  transform: translateY(-5px);
 }
 
 .benefit__icon {
