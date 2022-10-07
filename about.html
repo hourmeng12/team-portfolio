@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>About | Portfolio</title>
+      <link rel="stylesheet" href="./style.css" />
+      <meta name="twitter:image" content="./assets/sabaicode.png" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@400;500;600&family=M+PLUS+Rounded+1c:wght@500;700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        rel="stylesheet"
+      />
+      <script src="./scripts/dark_mode.js" defer></script>
+      <script src="./scripts/shuffle_word.js" defer></script>
+      <link rel="stylesheet" href="./scripts/blinking_cursor.css" />
+    </head>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="/">Portfolio</a>
+      </div>
+      <ul class="nav__list">
+        <li>
+          <a class="nav__link" href="/#bootcamp">Bootcamp</a>
+        </li>
+        <li>
+          <a class="nav__link" href="/#team">About</a>
+        </li>
+        <li>
+          <a class="nav__link" href="/contact.html">Contact</a>
+        </li>
+        <li>
+          <!-- darkmode button -->
+          <div class="dark-mode__container">
+            <!-- end of darkmode button -->
+            <input
+              type="checkbox"
+              class="dark-mode__input"
+              id="dark-mode__btn"
+            />
+            <label for="dark-mode__btn" class="dark-mode__label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="dark-mode__ball"></div>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <div class="label" id="team">Team</div>
+      <div class="profile">
+        <div class="profile__header">
+          <div class="profile__info">
+            <span class="profile__name">Khy Hourmeng</span>
+            <span>
+              <span class="profile_desc" id="hourmeng__job"
+                >Frontend Developer</span
+              ><span class="blinking-cursor">|</span></span
+            >
+            <div class="icon__container">
+              <a href="https://www.facebook.com/hourmeng122" target="_blank">
+                <img
+                  class="icon facebook"
+                  src="./assets/icons/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a href="https://www.instagram.com/hourmeng12" target="_blank">
+                <img
+                  class="icon instagram"
+                  src="./assets/icons/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a href="https://bitbucket.org/hourmeng12" target="_blank">
+                <img
+                  class="icon bitbucket"
+                  src="./assets/icons/bitbucket.svg"
+                  alt="bitbucket"
+                />
+              </a>
+            </div>
+          </div>
+          <img
+            class="profile__img"
+            src="./assets/profiles/hourmeng-profile.jpg"
+            alt="hourmeng-profile"
+          />
+        </div>
+        <div class="profile__heading">Education</div>
+        <div>
+          <span class="profile__label">Present</span>
+          Bachelor of Computer Science at RUPP
+        </div>
+        <div>
+          <span class="profile__label">2020</span>
+          Completed General English as a second language at Beltei International
+          School
+        </div>
+        <div>
+          <span class="profile__label">2020</span>
+          Graduated Bac II from Hun Sen Champuvoin High School
+        </div>
+        <div class="profile__heading">Skills</div>
+        <div>
+          <span class="profile__label">Html/Css, Javascript, ReactJs</span>
+        </div>
+        <div class="link__container">
+          <a class="link" href="/team/hourmeng.html">View more</a>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="profile__header">
+          <div class="profile__info">
+            <span class="profile__name">Sean Sophearom</span>
+            <span>
+              <span class="profile_desc" id="phearom__job"
+                >Backend Developer</span
+              ><span class="blinking-cursor">|</span></span
+            >
+            <div class="icon__container">
+              <a
+                href="https://www.facebook.com/profile.php?id=100009382016475"
+                target="_blank"
+              >
+                <img
+                  class="icon facebook"
+                  src="./assets/icons/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a href="https://bitbucket.org/sean_sophearom" target="_blank">
+                <img
+                  class="icon bitbucket"
+                  src="./assets/icons/bitbucket.svg"
+                  alt="bitbucket"
+                />
+              </a>
+            </div>
+          </div>
+          <img
+            class="profile__img"
+            src="./assets/profiles/sophearom-profile.jpg"
+            alt="sophearom-profile"
+          />
+        </div>
+        <div class="profile__heading">Education</div>
+        <div>
+          <span class="profile__label">Present</span>
+          Studying at Hun Sen Chak Angre High School
+        </div>
+        <div>
+          <span class="profile__label">2017</span>
+          Completed advanced learner class at School for Sukkhak
+        </div>
+        <div class="profile__heading">Skills</div>
+        <div>
+          <span class="profile__label"
+            >Html/Css, Javascript, ReactJs, NodeJs, Express</span
+          >
+        </div>
+        <div class="link__container">
+          <a class="link" href="/team/phearom.html">View more</a>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="profile__header">
+          <div class="profile__info">
+            <span class="profile__name">Lorn Samnang</span>
+            <span>
+              <span class="profile_desc" id="samnang__job">UI/UX Designer</span
+              ><span class="blinking-cursor">|</span></span
+            >
+            <div class="icon__container">
+              <a href="https://www.facebook.com/Chessman.nang" target="_blank">
+                <img
+                  class="icon facebook"
+                  src="./assets/icons/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a href="https://www.instagram.com/chhhhayyyyy" target="_blank">
+                <img
+                  class="icon instagram"
+                  src="./assets/icons/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a href="https://bitbucket.org/chhayyy" target="_blank">
+                <img
+                  class="icon bitbucket"
+                  src="./assets/icons/bitbucket.svg"
+                  alt="bitbucket"
+                />
+              </a>
+            </div>
+          </div>
+          <img
+            class="profile__img"
+            src="./assets/profiles/samnang-profile.jpg"
+            alt="samnang-profile"
+          />
+        </div>
+        <div class="profile__heading">Education</div>
+        <div>
+          <span class="profile__label">Present</span>
+          Bachelor of Computer Science at RUPP
+        </div>
+        <div>
+          <span class="profile__label">2021</span>
+          Graduated Bac II from Hun Sen Preynop High School
+        </div>
+        <div class="profile__heading">Skills</div>
+        <div>
+          <span class="profile__label"
+            >Html/Css, Javascript, ReactJs, Figma</span
+          >
+        </div>
+        <div class="link__container">
+          <a class="link" href="/team/samnang.html">View more</a>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      setTimeout(() => {
+        shuffleWord(document.getElementById('hourmeng__job'), [
+          'Frontend Developer...',
+          'Web Developer...',
+          'UI/UX Designer...',
+        ]);
+      }, 500);
+
+      setTimeout(() => {
+        shuffleWord(document.getElementById('phearom__job'), [
+          'Frontend Developer...',
+          'Web Developer...',
+          'Backend Developer...',
+        ]);
+      }, 1250);
+
+      setTimeout(() => {
+        shuffleWord(document.getElementById('samnang__job'), [
+          'Frontend Developer...',
+          'Web Developer...',
+          'UI/UX Designer...',
+        ]);
+      }, 2000);
+    </script>
+  </body>
+</html>
