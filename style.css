@@ -559,3 +559,45 @@ textarea {
   font-weight: 600;
   text-align: center;
 }
+
+/* web design section - about page */
+.web-design {
+  border: 2px dashed rgba(22, 44, 39, 0.25);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.web-design span {
+  color: rgba(22, 44, 39, 0.8);
+}
+
+.web-design__content {
+  list-style: none;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.web-design__color-pallete {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.web-design__color-block {
+  width: 42px;
+  height: 42px;
+  background-color: #000;
+  border-radius: 8px;
+  border: 1px solid rgba(22, 44, 39, 0.25);
+}
+
+.web-design__color-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.web-design__color-detail span {
+  font-size: 14px;
+}
