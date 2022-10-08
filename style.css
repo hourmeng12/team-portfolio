@@ -9,6 +9,19 @@ html {
   --bg-color: #fff;
 }
 
+.dark span {
+  color: #ccc !important;
+  border-color: #ccc;
+}
+
+.dark section {
+  border-color: #ccc;
+}
+
+.dark .benefit__item {
+  background-color: #262626;
+}
+
 /* style for dark mode icon */
 
 .dark-mode__container {
